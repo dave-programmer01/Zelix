@@ -1,3 +1,13 @@
 spring:
   application:
     name: Zelix
+  datasource:
+    url: jdbc:postgresql://localhost:5432/zzelix
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
